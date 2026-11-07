@@ -39,7 +39,7 @@
       "name": "OMC Qoder OAuth",
       "description": "Native Qoder provider for CLIProxyAPI with Qoder and Qoder CN OAuth, powered by the Oh-My-CPA ecosystem. Features dual-portal login, model discovery, OpenAI-compatible execution, tool calls and normalized quota.",
       "author": "JUNZE",
-      "version": "0.1.1",
+      "version": "0.2.0",
       "repository": "https://github.com/omc-community/omc-qoder-oauth",
       "logo": "https://raw.githubusercontent.com/omc-community/omc-qoder-oauth/main/assets/qoder-color.svg",
       "homepage": "https://github.com/omc-community/omc-qoder-oauth",
@@ -84,14 +84,14 @@
         "OMC"
       ],
       "locales": {
+        "ms": {
+          "description": "Penyedia WorkBuddy asli untuk CLIProxyAPI dengan log masuk OAuth dwi-portal WorkBuddy (binaan China) dan WorkBuddy AI (binaan antarabangsa), penemuan model, pelaksanaan serasi OpenAI, panggilan alat, serta kuota terselaras."
+        },
         "zh-CN": {
           "description": "CLIProxyAPI 的原生 WorkBuddy 提供商插件，支持 WorkBuddy（中国版）与 WorkBuddy AI（国际版）双入口 OAuth 登录、模型发现、OpenAI 兼容请求与工具调用，以及标准化配额展示。"
         },
         "zh-Hant": {
           "description": "CLIProxyAPI 的原生 WorkBuddy 提供者外掛，支援 WorkBuddy（中國版）與 WorkBuddy AI（國際版）雙入口 OAuth 登入、模型探索、OpenAI 相容請求與工具呼叫，以及標準化配額顯示。"
-        },
-        "ms": {
-          "description": "Penyedia WorkBuddy asli untuk CLIProxyAPI dengan log masuk OAuth dwi-portal WorkBuddy (binaan China) dan WorkBuddy AI (binaan antarabangsa), penemuan model, pelaksanaan serasi OpenAI, panggilan alat, serta kuota terselaras."
         }
       },
       "install": {
