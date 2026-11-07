@@ -122,16 +122,21 @@ func validateRepository(repository string) error {
 	return nil
 }
 
-func TestRegistryIsValid(t *testing.T) {
-	raw, err := os.ReadFile("registry.json")
-	if err != nil {
-		t.Fatalf("failed to read registry.json: %v", err)
-	}
-	doc, err := validateRegistry(raw)
-	if err != nil {
-		t.Fatalf("registry.json validation failed: %v", err)
-	}
-	if len(doc.Plugins) == 0 {
-		t.Fatalf("expected plugins list to be non-empty")
+func TestRegistriesAreValid(t *testing.T) {
+	files := []string{"official.json", "community.json", "registry.json"}
+	for _, file := range files {
+		t.Run(file, func(t *testing.T) {
+			raw, err := os.ReadFile(file)
+			if err != nil {
+				t.Fatalf("failed to read %s: %v", file, err)
+			}
+			doc, err := validateRegistry(raw)
+			if err != nil {
+				t.Fatalf("%s validation failed: %v", file, err)
+			}
+			if len(doc.Plugins) == 0 {
+				t.Fatalf("%s: expected plugins list to be non-empty", file)
+			}
+		})
 	}
 }

@@ -30,14 +30,43 @@
 </p>
 
 本项目发布 [Oh-My-CPA](https://github.com/WizisCool/oh-my-cpa) (OMC) 与
-[CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI) (CPA) 生态的官方插件软件源索引（`registry.json`）。
-
-收录经过审核与测试的官方提供商扩展、辅助工具及社区贡献插件，支持在 Oh-My-CPA 控制台及 CPA 中一键发现并安装。
+[CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI) (CPA) 生态的 2 个独立软件源列表（以及 1 个聚合总索引）：
+- **`official.json`**：官方团队直接维护并校验的核心提供商与集成插件
+- **`community.json`**：社区开发者贡献与维护的扩展插件
+- **`registry.json`**：包含官方维护与社区贡献的聚合总索引
 
 ---
 
-## 软件源地址
+## 软件源订阅地址
 
+您可以根据部署与安全需求选择订阅对应的源：
+
+### 1. 官方维护源 (`official.json`)
+
+仅包含官方团队维护的核心集成插件：
+```
+https://raw.githubusercontent.com/omc-community/omc-plugins/main/official.json
+```
+
+| 标识 (ID) | 名称 | 描述 | 作者 | 仓库地址 |
+| --- | --- | --- | --- | --- |
+| `omc-zcode-oauth` | **OMC ZCode OAuth** | 支持 Z.ai / BigModel 双入口 OAuth 登录、模型发现、额度路由与配额规范化。 | JUNZE | [omc-community/omc-zcode-oauth](https://github.com/omc-community/omc-zcode-oauth) |
+| `omc-qoder-oauth` | **OMC Qoder OAuth** | 支持 Qoder 与 Qoder CN 双入口 OAuth 登录、OpenAI 兼容调用及配额展示。 | JUNZE | [omc-community/omc-qoder-oauth](https://github.com/omc-community/omc-qoder-oauth) |
+
+### 2. 社区贡献源 (`community.json`)
+
+包含社区贡献者提交的扩展与测试工具：
+```
+https://raw.githubusercontent.com/omc-community/omc-plugins/main/community.json
+```
+
+| 标识 (ID) | 名称 | 描述 | 作者 | 仓库地址 |
+| --- | --- | --- | --- | --- |
+| `omcpa-codex-candy-eval` | **降智测试** | 糖果推理题、模型指纹与鹈鹕绘图测试，支持批量评测与历史记录。 | Yorick-Ryu / haowang02 | [Yorick-Ryu/cpa-plugin-codex-candy-eval](https://github.com/Yorick-Ryu/cpa-plugin-codex-candy-eval) |
+
+### 3. 聚合总源 (`registry.json`)
+
+一键订阅包含所有官方及社区插件：
 ```
 https://raw.githubusercontent.com/omc-community/omc-plugins/main/registry.json
 ```
@@ -48,28 +77,19 @@ https://raw.githubusercontent.com/omc-community/omc-plugins/main/registry.json
 
 ### 在 Oh-My-CPA 中使用
 
-Oh-My-CPA 默认集成本软件源。可在控制台的 **设置 → 插件 → 插件商店** 中直接查看与管理该源的状态。
+Oh-My-CPA 默认集成聚合总源。您也可以在控制台的 **设置 → 插件 → 插件商店** 中单独添加或开关 `official.json` 与 `community.json`。
 
 ### 在 CLIProxyAPI (CPA) 中使用
 
-将该地址加入 CPA 的 `config.yaml` 配置文件中：
+将需要的源地址加入 CPA 的 `config.yaml` 配置文件中：
 
 ```yaml
 plugins:
   enabled: true
   store-sources:
-    - https://raw.githubusercontent.com/omc-community/omc-plugins/main/registry.json
+    - https://raw.githubusercontent.com/omc-community/omc-plugins/main/official.json
+    - https://raw.githubusercontent.com/omc-community/omc-plugins/main/community.json
 ```
-
----
-
-## 当前收录插件
-
-| 标识 (ID) | 名称 | 描述 | 作者 | 仓库地址 |
-| --- | --- | --- | --- | --- |
-| `omc-zcode-oauth` | **OMC ZCode OAuth** | 支持 Z.ai / BigModel 双入口 OAuth 登录、模型发现、额度路由与配额规范化。 | JUNZE | [omc-community/omc-zcode-oauth](https://github.com/omc-community/omc-zcode-oauth) |
-| `omc-qoder-oauth` | **OMC Qoder OAuth** | 支持 Qoder 与 Qoder CN 双入口 OAuth 登录、OpenAI 兼容调用及配额展示。 | JUNZE | [omc-community/omc-qoder-oauth](https://github.com/omc-community/omc-qoder-oauth) |
-| `omcpa-codex-candy-eval` | **降智测试** | 糖果推理题、模型指纹与鹈鹕绘图测试，支持批量评测与历史记录。 | Yorick-Ryu / haowang02 | [Yorick-Ryu/cpa-plugin-codex-candy-eval](https://github.com/Yorick-Ryu/cpa-plugin-codex-candy-eval) |
 
 ---
 

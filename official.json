@@ -1,0 +1,70 @@
+{
+  "schema_version": 2,
+  "plugins": [
+    {
+      "id": "omc-zcode-oauth",
+      "name": "OMC ZCode OAuth",
+      "description": "Native ZCode provider for CLIProxyAPI with dual-portal Z.ai / BigModel OAuth login, model discovery, Anthropic Messages execution, Coding Plan and gift routing, and normalized quota. Developed as part of the Oh-My-CPA ecosystem.",
+      "author": "JUNZE",
+      "version": "0.2.2",
+      "repository": "https://github.com/omc-community/omc-zcode-oauth",
+      "logo": "https://raw.githubusercontent.com/omc-community/omc-zcode-oauth/main/assets/logo.png",
+      "homepage": "https://github.com/omc-community/omc-zcode-oauth",
+      "license": "MIT",
+      "tags": [
+        "Provider",
+        "OAuth",
+        "Quota",
+        "GLM",
+        "ZCode",
+        "OMC"
+      ],
+      "locales": {
+        "zh-CN": {
+          "description": "CLIProxyAPI 的原生 ZCode 提供商插件，支持 Z.ai / BigModel 双入口 OAuth 登录、模型发现、Anthropic Messages 请求、Coding Plan 与赠送额度路由，以及标准化配额展示。"
+        },
+        "zh-Hant": {
+          "description": "CLIProxyAPI 的原生 ZCode 提供者外掛，支援 Z.ai / BigModel 雙入口 OAuth 登入、模型探索、Anthropic Messages 請求、Coding Plan 與贈送額度路由，以及標準化配額顯示。"
+        },
+        "ms": {
+          "description": "Penyedia ZCode asli untuk CLIProxyAPI dengan log masuk OAuth dwi-portal Z.ai / BigModel, penemuan model, pelaksanaan Anthropic Messages, penghalaan Coding Plan dan hadiah, serta kuota terselaras."
+        }
+      },
+      "install": {
+        "type": "github-release"
+      }
+    },
+    {
+      "id": "omc-qoder-oauth",
+      "name": "OMC Qoder OAuth",
+      "description": "Native Qoder provider for CLIProxyAPI with Qoder and Qoder CN OAuth, powered by the Oh-My-CPA ecosystem. Features dual-portal login, model discovery, OpenAI-compatible execution, tool calls and normalized quota.",
+      "author": "JUNZE",
+      "version": "0.1.1",
+      "repository": "https://github.com/omc-community/omc-qoder-oauth",
+      "logo": "https://raw.githubusercontent.com/omc-community/omc-qoder-oauth/main/assets/qoder-color.svg",
+      "homepage": "https://github.com/omc-community/omc-qoder-oauth",
+      "license": "MIT",
+      "tags": [
+        "Provider",
+        "OAuth",
+        "Quota",
+        "Qoder",
+        "OMC"
+      ],
+      "locales": {
+        "zh-CN": {
+          "description": "CLIProxyAPI 的原生 Qoder 提供商插件，支持 Qoder 与 Qoder CN 双入口 OAuth 登录、模型发现、OpenAI 兼容请求与工具调用，以及标准化配额展示。"
+        },
+        "zh-Hant": {
+          "description": "CLIProxyAPI 的原生 Qoder 提供者外掛，支援 Qoder 與 Qoder CN 雙入口 OAuth 登入、模型探索、OpenAI 相容請求与工具呼叫，以及標準化配額顯示。"
+        },
+        "ms": {
+          "description": "Penyedia Qoder asli untuk CLIProxyAPI dengan log masuk OAuth dwi-portal Qoder dan Qoder CN, penemuan model, pelaksanaan serasi OpenAI, panggilan alat, serta kuota terselaras."
+        }
+      },
+      "install": {
+        "type": "github-release"
+      }
+    }
+  ]
+}

@@ -30,18 +30,44 @@
   <a href="README.md">English</a> · <a href="README.zh-CN.md">简体中文</a>
 </p>
 
-This repository publishes the official plugin registry document (`registry.json`) for the
+This repository publishes two dedicated plugin registry lists (plus an aggregated index) for the
 [Oh-My-CPA](https://github.com/WizisCool/oh-my-cpa) (OMC) and
-[CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI) (CPA) ecosystem.
-
-It provides a curated, vetted software source for official provider extensions, companion
-tools, and community plugins, enabling zero-configuration plugin discovery and one-click
-installation inside Oh-My-CPA and CPA.
+[CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI) (CPA) ecosystem:
+- **`official.json`**: Plugins developed, maintained, and verified by the core Oh-My-CPA team.
+- **`community.json`**: Community-contributed plugins, extensions, and integrations.
 
 ---
 
-## Registry URL
+## Registry Sources
 
+Choose the registry source that best fits your environment:
+
+### 1. Officially Maintained Source (`official.json`)
+
+Contains vetted first-party provider integrations and core extensions:
+```
+https://raw.githubusercontent.com/omc-community/omc-plugins/main/official.json
+```
+
+| Plugin ID | Name | Description | Author | Repository |
+| --- | --- | --- | --- | --- |
+| `omc-zcode-oauth` | **OMC ZCode OAuth** | Native ZCode provider with dual-portal Z.ai / BigModel OAuth, model discovery, and quota normalization. | JUNZE | [omc-community/omc-zcode-oauth](https://github.com/omc-community/omc-zcode-oauth) |
+| `omc-qoder-oauth` | **OMC Qoder OAuth** | Native Qoder & Qoder CN provider with dual-portal OAuth, OpenAI-compatible execution, and quota normalization. | JUNZE | [omc-community/omc-qoder-oauth](https://github.com/omc-community/omc-qoder-oauth) |
+
+### 2. Community Contributed Source (`community.json`)
+
+Contains third-party extensions and community integrations:
+```
+https://raw.githubusercontent.com/omc-community/omc-plugins/main/community.json
+```
+
+| Plugin ID | Name | Description | Author | Repository |
+| --- | --- | --- | --- | --- |
+| `omcpa-codex-candy-eval` | **降智测试** | Model performance evaluation plugin (candy reasoning, model fingerprints, and pelican rendering). | Yorick-Ryu / haowang02 | [Yorick-Ryu/cpa-plugin-codex-candy-eval](https://github.com/Yorick-Ryu/cpa-plugin-codex-candy-eval) |
+
+### 3. Aggregated Source (`registry.json`)
+
+Combines both official and community plugins into a single subscription:
 ```
 https://raw.githubusercontent.com/omc-community/omc-plugins/main/registry.json
 ```
@@ -52,29 +78,19 @@ https://raw.githubusercontent.com/omc-community/omc-plugins/main/registry.json
 
 ### Oh-My-CPA (OMC)
 
-Oh-My-CPA includes this registry by default as its official ecosystem source.
-You can view, enable, or disable it under **Settings → Plugins → Plugin Store**.
+Oh-My-CPA connects to the aggregated source by default. You can manage or add individual sources (`official.json` or `community.json`) under **Settings → Plugins → Plugin Store**.
 
 ### CLIProxyAPI (CPA)
 
-Add the raw registry URL to the `plugins.store-sources` list in your `config.yaml`:
+Add desired source URLs to `plugins.store-sources` in your `config.yaml`:
 
 ```yaml
 plugins:
   enabled: true
   store-sources:
-    - https://raw.githubusercontent.com/omc-community/omc-plugins/main/registry.json
+    - https://raw.githubusercontent.com/omc-community/omc-plugins/main/official.json
+    - https://raw.githubusercontent.com/omc-community/omc-plugins/main/community.json
 ```
-
----
-
-## Catalogued Plugins
-
-| Plugin ID | Name | Description | Author | Repository |
-| --- | --- | --- | --- | --- |
-| `omc-zcode-oauth` | **OMC ZCode OAuth** | Native ZCode provider with dual-portal Z.ai / BigModel OAuth, model discovery, and quota normalization. | JUNZE | [omc-community/omc-zcode-oauth](https://github.com/omc-community/omc-zcode-oauth) |
-| `omc-qoder-oauth` | **OMC Qoder OAuth** | Native Qoder & Qoder CN provider with dual-portal OAuth, OpenAI-compatible execution, and quota normalization. | JUNZE | [omc-community/omc-qoder-oauth](https://github.com/omc-community/omc-qoder-oauth) |
-| `omcpa-codex-candy-eval` | **降智测试** | Model performance evaluation plugin (candy reasoning, model fingerprints, and pelican rendering). | Yorick-Ryu / haowang02 | [Yorick-Ryu/cpa-plugin-codex-candy-eval](https://github.com/Yorick-Ryu/cpa-plugin-codex-candy-eval) |
 
 ---
 
