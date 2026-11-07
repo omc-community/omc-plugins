@@ -39,9 +39,9 @@
       "name": "OMC Qoder OAuth",
       "description": "Native Qoder provider for CLIProxyAPI with Qoder and Qoder CN OAuth, powered by the Oh-My-CPA ecosystem. Features dual-portal login, model discovery, OpenAI-compatible execution, tool calls and normalized quota.",
       "author": "JUNZE",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "repository": "https://github.com/omc-community/omc-qoder-oauth",
-      "logo": "https://raw.githubusercontent.com/omc-community/omc-qoder-oauth/main/assets/qoder-color.svg",
+      "logo": "https://raw.githubusercontent.com/omc-community/omc-qoder-oauth/main/assets/logo.png",
       "homepage": "https://github.com/omc-community/omc-qoder-oauth",
       "license": "MIT",
       "tags": [
@@ -71,9 +71,9 @@
       "name": "OMC WorkBuddy OAuth",
       "description": "Native WorkBuddy provider for CLIProxyAPI with WorkBuddy and WorkBuddy AI OAuth, model discovery, OpenAI-compatible execution, and normalized quota. Developed as part of the Oh-My-CPA ecosystem.",
       "author": "JUNZE",
-      "version": "0.1.6",
+      "version": "0.1.7",
       "repository": "https://github.com/omc-community/omc-workbuddy-oauth",
-      "logo": "https://raw.githubusercontent.com/omc-community/omc-workbuddy-oauth/main/assets/workbuddy.svg",
+      "logo": "https://raw.githubusercontent.com/omc-community/omc-workbuddy-oauth/main/assets/logo.png",
       "homepage": "https://github.com/omc-community/omc-workbuddy-oauth",
       "license": "MIT",
       "tags": [
