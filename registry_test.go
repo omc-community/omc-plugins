@@ -140,3 +140,66 @@ func TestRegistriesAreValid(t *testing.T) {
 		})
 	}
 }
+
+func TestRegistryMatchesGenerated(t *testing.T) {
+	officialBytes, err := os.ReadFile("official.json")
+	if err != nil {
+		t.Fatalf("read official.json: %v", err)
+	}
+	communityBytes, err := os.ReadFile("community.json")
+	if err != nil {
+		t.Fatalf("read community.json: %v", err)
+	}
+	registryBytes, err := os.ReadFile("registry.json")
+	if err != nil {
+		t.Fatalf("read registry.json: %v", err)
+	}
+
+	var officialDoc registryDocument
+	if err := json.Unmarshal(officialBytes, &officialDoc); err != nil {
+		t.Fatalf("decode official.json: %v", err)
+	}
+	var communityDoc registryDocument
+	if err := json.Unmarshal(communityBytes, &communityDoc); err != nil {
+		t.Fatalf("decode community.json: %v", err)
+	}
+	var registryDoc registryDocument
+	if err := json.Unmarshal(registryBytes, &registryDoc); err != nil {
+		t.Fatalf("decode registry.json: %v", err)
+	}
+
+	expectedCount := len(officialDoc.Plugins) + len(communityDoc.Plugins)
+	if len(registryDoc.Plugins) != expectedCount {
+		t.Fatalf("registry.json has %d plugins, want %d (official %d + community %d)",
+			len(registryDoc.Plugins), expectedCount, len(officialDoc.Plugins), len(communityDoc.Plugins))
+	}
+
+	officialIDs := make(map[string]bool)
+	for _, p := range officialDoc.Plugins {
+		officialIDs[p.ID] = true
+	}
+	communityIDs := make(map[string]bool)
+	for _, p := range communityDoc.Plugins {
+		if officialIDs[p.ID] {
+			t.Fatalf("plugin ID %q exists in both official.json and community.json", p.ID)
+		}
+		communityIDs[p.ID] = true
+	}
+
+	// Invariant: Official plugins must ALWAYS appear above community plugins.
+	for i, officialPlugin := range officialDoc.Plugins {
+		if registryDoc.Plugins[i].ID != officialPlugin.ID {
+			t.Fatalf("registry.json[%d] = %q, want official plugin %q (official plugins must always appear above community plugins)",
+				i, registryDoc.Plugins[i].ID, officialPlugin.ID)
+		}
+	}
+
+	offset := len(officialDoc.Plugins)
+	for j, communityPlugin := range communityDoc.Plugins {
+		idx := offset + j
+		if registryDoc.Plugins[idx].ID != communityPlugin.ID {
+			t.Fatalf("registry.json[%d] = %q, want community plugin %q",
+				idx, registryDoc.Plugins[idx].ID, communityPlugin.ID)
+		}
+	}
+}

@@ -98,7 +98,8 @@ plugins:
 欢迎为 OMC 社区生态贡献插件！提交流程如下：
 
 1. **Fork** 本仓库。
-2. 在 `registry.json` 中添加你的插件条目。
+2. 在 **`community.json`**（官方团队核心扩展则编辑 `official.json`）中添加你的插件条目。
+   > **注意**：聚合总源 `registry.json` 由 CI 自动生成（且**官方维护插件永远置顶排列在社区贡献插件上方**），无需且请勿手动编辑 `registry.json`。
 3. 确保字段满足 CPA/OMC 校验规范：
    - `id`: 唯一标识符，满足 `^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$`。
    - `name`: 插件展示名称。
@@ -109,7 +110,7 @@ plugins:
    - `install`: 指定 `{"type": "github-release"}`。
    - `locales`: 可选的多语言描述映射（如 `zh-CN`, `zh-Hant`, `ms`）。
    - `logo`: 可选的直接 HTTPS 图片地址。
-4. 本地运行测试验证：
+4. 本地运行测试验证（或通过 `go run ./scripts/generate.go` 本地生成预览）：
    ```bash
    go test -v ./...
    ```
