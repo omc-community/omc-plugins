@@ -52,6 +52,7 @@ https://raw.githubusercontent.com/omc-community/omc-plugins/main/official.json
 | --- | --- | --- | --- | --- |
 | `omc-zcode-oauth` | **OMC ZCode OAuth** | 支持 Z.ai / BigModel 双入口 OAuth 登录、模型发现、额度路由与配额规范化。 | JUNZE | [omc-community/omc-zcode-oauth](https://github.com/omc-community/omc-zcode-oauth) |
 | `omc-qoder-oauth` | **OMC Qoder OAuth** | 支持 Qoder 与 Qoder CN 双入口 OAuth 登录、OpenAI 兼容调用及配额展示。 | JUNZE | [omc-community/omc-qoder-oauth](https://github.com/omc-community/omc-qoder-oauth) |
+| `omc-workbuddy-oauth` | **OMC WorkBuddy OAuth** | 支持 WorkBuddy（中国版）与 WorkBuddy AI（国际版）双入口 OAuth 登录、OpenAI 兼容调用及配额展示。 | JUNZE | [omc-community/omc-workbuddy-oauth](https://github.com/omc-community/omc-workbuddy-oauth) |
 
 ### 2. 社区贡献源 (`community.json`)
 

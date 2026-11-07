@@ -53,6 +53,7 @@ https://raw.githubusercontent.com/omc-community/omc-plugins/main/official.json
 | --- | --- | --- | --- | --- |
 | `omc-zcode-oauth` | **OMC ZCode OAuth** | Native ZCode provider with dual-portal Z.ai / BigModel OAuth, model discovery, and quota normalization. | JUNZE | [omc-community/omc-zcode-oauth](https://github.com/omc-community/omc-zcode-oauth) |
 | `omc-qoder-oauth` | **OMC Qoder OAuth** | Native Qoder & Qoder CN provider with dual-portal OAuth, OpenAI-compatible execution, and quota normalization. | JUNZE | [omc-community/omc-qoder-oauth](https://github.com/omc-community/omc-qoder-oauth) |
+| `omc-workbuddy-oauth` | **OMC WorkBuddy OAuth** | Native WorkBuddy & WorkBuddy AI provider with dual-build OAuth, OpenAI-compatible execution, and quota normalization. | JUNZE | [omc-community/omc-workbuddy-oauth](https://github.com/omc-community/omc-workbuddy-oauth) |
 
 ### 2. Community Contributed Source (`community.json`)
 
