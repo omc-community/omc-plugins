@@ -97,6 +97,38 @@
       "install": {
         "type": "github-release"
       }
+    },
+    {
+      "id": "omc-opencode-zen-free",
+      "name": "OMC OpenCode Zen Free",
+      "description": "OpenCode Zen's free models for CLIProxyAPI with keyless public-credential sign-in, live free-model discovery, OpenCode-identity OpenAI-compatible execution, and preserved tool calls. Developed as part of the Oh-My-CPA ecosystem.",
+      "author": "JUNZE",
+      "version": "0.1.0",
+      "repository": "https://github.com/omc-community/omc-opencode-zen-free",
+      "logo": "https://raw.githubusercontent.com/omc-community/omc-opencode-zen-free/main/assets/logo.png",
+      "homepage": "https://github.com/omc-community/omc-opencode-zen-free",
+      "license": "MIT",
+      "tags": [
+        "Provider",
+        "Free",
+        "OpenCode",
+        "Zen",
+        "OMC"
+      ],
+      "locales": {
+        "zh-CN": {
+          "description": "CLIProxyAPI 的 OpenCode Zen 免费模型提供商插件，支持 public 凭证免密钥登录、免费模型实时发现、OpenCode 身份的 OpenAI 兼容请求，以及工具调用保留。"
+        },
+        "zh-Hant": {
+          "description": "CLIProxyAPI 的 OpenCode Zen 免費模型提供者外掛，支援 public 憑證免金鑰登入、免費模型即時探索、OpenCode 身分的 OpenAI 相容請求，以及工具呼叫保留。"
+        },
+        "ms": {
+          "description": "Model percuma OpenCode Zen untuk CLIProxyAPI dengan log masuk kredensial awam tanpa kunci, penemuan model percuma langsung, pelaksanaan serasi OpenAI dengan identiti OpenCode, dan panggilan alat yang dikekalkan."
+        }
+      },
+      "install": {
+        "type": "github-release"
+      }
     }
   ]
 }
