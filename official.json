@@ -103,7 +103,7 @@
       "name": "OMC OpenCode Zen Free",
       "description": "OpenCode Zen's free models for CLIProxyAPI with keyless public-credential sign-in, live free-model discovery, OpenCode-identity OpenAI-compatible execution, and preserved tool calls. Developed as part of the Oh-My-CPA ecosystem.",
       "author": "JUNZE",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "repository": "https://github.com/omc-community/omc-opencode-zen-free",
       "logo": "https://raw.githubusercontent.com/omc-community/omc-opencode-zen-free/main/assets/logo.png",
       "homepage": "https://github.com/omc-community/omc-opencode-zen-free",
