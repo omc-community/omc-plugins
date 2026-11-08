@@ -2,6 +2,38 @@
   "schema_version": 2,
   "plugins": [
     {
+      "id": "omc-workbuddy-oauth",
+      "name": "OMC WorkBuddy OAuth",
+      "description": "Native WorkBuddy provider for CLIProxyAPI with WorkBuddy and WorkBuddy AI OAuth, model discovery, OpenAI-compatible execution, and normalized quota. Developed as part of the Oh-My-CPA ecosystem.",
+      "author": "JUNZE",
+      "version": "0.1.8",
+      "repository": "https://github.com/omc-community/omc-workbuddy-oauth",
+      "logo": "https://raw.githubusercontent.com/omc-community/omc-workbuddy-oauth/main/assets/logo.png",
+      "homepage": "https://github.com/omc-community/omc-workbuddy-oauth",
+      "license": "MIT",
+      "tags": [
+        "Provider",
+        "OAuth",
+        "Quota",
+        "WorkBuddy",
+        "OMC"
+      ],
+      "locales": {
+        "ms": {
+          "description": "Penyedia WorkBuddy asli untuk CLIProxyAPI dengan log masuk OAuth dwi-portal WorkBuddy dan WorkBuddy AI, penemuan model, pelaksanaan serasi OpenAI, panggilan alat, serta kuota terselaras."
+        },
+        "zh-CN": {
+          "description": "CLIProxyAPI 的原生 WorkBuddy 提供商插件，支持 WorkBuddy 与 WorkBuddy AI 双入口 OAuth 登录、模型发现、OpenAI 兼容请求与工具调用，以及标准化配额展示。"
+        },
+        "zh-Hant": {
+          "description": "CLIProxyAPI 的原生 WorkBuddy 提供者外掛，支援 WorkBuddy 與 WorkBuddy AI 雙入口 OAuth 登入、模型探索、OpenAI 相容請求與工具呼叫，以及標準化配額顯示。"
+        }
+      },
+      "install": {
+        "type": "github-release"
+      }
+    },
+    {
       "id": "omc-zcode-oauth",
       "name": "OMC ZCode OAuth",
       "description": "Native ZCode provider for CLIProxyAPI with dual-portal Z.ai / BigModel OAuth login, model discovery, Anthropic Messages execution, Coding Plan and gift routing, and normalized quota. Developed as part of the Oh-My-CPA ecosystem.",
@@ -67,31 +99,31 @@
       }
     },
     {
-      "id": "omc-workbuddy-oauth",
-      "name": "OMC WorkBuddy OAuth",
-      "description": "Native WorkBuddy provider for CLIProxyAPI with WorkBuddy and WorkBuddy AI OAuth, model discovery, OpenAI-compatible execution, and normalized quota. Developed as part of the Oh-My-CPA ecosystem.",
+      "id": "omc-trae-oauth",
+      "name": "OMC Trae OAuth",
+      "description": "Native Trae provider for CLIProxyAPI with Trae and Trae CN browser OAuth, model discovery, OpenAI-compatible execution with tool calls, and normalized quota. Developed as part of the Oh-My-CPA ecosystem.",
       "author": "JUNZE",
-      "version": "0.1.8",
-      "repository": "https://github.com/omc-community/omc-workbuddy-oauth",
-      "logo": "https://raw.githubusercontent.com/omc-community/omc-workbuddy-oauth/main/assets/logo.png",
-      "homepage": "https://github.com/omc-community/omc-workbuddy-oauth",
+      "version": "0.1.0",
+      "repository": "https://github.com/omc-community/omc-trae-oauth",
+      "logo": "https://raw.githubusercontent.com/omc-community/omc-trae-oauth/main/assets/logo.png",
+      "homepage": "https://github.com/omc-community/omc-trae-oauth",
       "license": "MIT",
       "tags": [
         "Provider",
         "OAuth",
         "Quota",
-        "WorkBuddy",
+        "Trae",
         "OMC"
       ],
       "locales": {
         "ms": {
-          "description": "Penyedia WorkBuddy asli untuk CLIProxyAPI dengan log masuk OAuth dwi-portal WorkBuddy dan WorkBuddy AI, penemuan model, pelaksanaan serasi OpenAI, panggilan alat, serta kuota terselaras."
+          "description": "Penyedia Trae asli untuk CLIProxyAPI dengan log masuk OAuth pelayar Trae dan Trae CN, penemuan model, pelaksanaan serasi OpenAI dengan panggilan alat, serta kuota terselaras."
         },
         "zh-CN": {
-          "description": "CLIProxyAPI 的原生 WorkBuddy 提供商插件，支持 WorkBuddy 与 WorkBuddy AI 双入口 OAuth 登录、模型发现、OpenAI 兼容请求与工具调用，以及标准化配额展示。"
+          "description": "CLIProxyAPI 的原生 Trae 提供商插件，支持 Trae 与 Trae CN 双入口浏览器 OAuth 登录、模型发现、OpenAI 兼容请求与工具调用，以及标准化配额展示。"
         },
         "zh-Hant": {
-          "description": "CLIProxyAPI 的原生 WorkBuddy 提供者外掛，支援 WorkBuddy 與 WorkBuddy AI 雙入口 OAuth 登入、模型探索、OpenAI 相容請求與工具呼叫，以及標準化配額顯示。"
+          "description": "CLIProxyAPI 的原生 Trae 提供者外掛，支援 Trae 與 Trae CN 雙入口瀏覽器 OAuth 登入、模型探索、OpenAI 相容請求與工具呼叫，以及標準化配額顯示。"
         }
       },
       "install": {
