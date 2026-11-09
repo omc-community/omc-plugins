@@ -66,6 +66,7 @@ https://raw.githubusercontent.com/omc-community/omc-plugins/main/community.json
 | 标识 (ID) | 名称 | 描述 | 作者 | 仓库地址 |
 | --- | --- | --- | --- | --- |
 | `omcpa-codex-candy-eval` | **降智测试** | 糖果推理题、模型指纹与鹈鹕绘图测试，支持批量评测与历史记录。 | Yorick-Ryu / haowang02 | [Yorick-Ryu/cpa-plugin-codex-candy-eval](https://github.com/Yorick-Ryu/cpa-plugin-codex-candy-eval) |
+| `doujie-oauth` | **Doujie OAuth** | 豆姐 CLIProxyAPI 提供商插件：支持国内版与 Dola 国际版显式扫码入口、桌面导入、原生 Anthropic/Chat/Responses 执行、配额窗口与重置卡。 | wangxiaoshuai136 | [wangxiaoshuai136/doujie-oauth](https://github.com/wangxiaoshuai136/doujie-oauth) |
 
 ### 3. 聚合总源 (`registry.json`)
 

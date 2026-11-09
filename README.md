@@ -67,6 +67,7 @@ https://raw.githubusercontent.com/omc-community/omc-plugins/main/community.json
 | Plugin ID | Name | Description | Author | Repository |
 | --- | --- | --- | --- | --- |
 | `omcpa-codex-candy-eval` | **降智测试** | Model performance evaluation plugin (candy reasoning, model fingerprints, and pelican rendering). | Yorick-Ryu / haowang02 | [Yorick-Ryu/cpa-plugin-codex-candy-eval](https://github.com/Yorick-Ryu/cpa-plugin-codex-candy-eval) |
+| `doujie-oauth` | **Doujie OAuth** | Doujie provider for CLIProxyAPI with explicit domestic and Dola QR entries, desktop import, native Anthropic/Chat/Responses execution, quota windows and reset cards. | wangxiaoshuai136 | [wangxiaoshuai136/doujie-oauth](https://github.com/wangxiaoshuai136/doujie-oauth) |
 
 ### 3. Aggregated Source (`registry.json`)
 
