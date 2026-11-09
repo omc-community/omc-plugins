@@ -71,7 +71,7 @@
       "name": "OMC Qoder OAuth",
       "description": "Native Qoder provider adapted for Oh-My-CPA and compatible with CLIProxyAPI, with Qoder and Qoder CN OAuth, model discovery, OpenAI-compatible execution, tool calls and normalized quota.",
       "author": "JUNZE",
-      "version": "0.2.4",
+      "version": "0.2.5",
       "repository": "https://github.com/omc-community/omc-qoder-oauth",
       "logo": "https://raw.githubusercontent.com/omc-community/omc-qoder-oauth/main/assets/logo.png",
       "homepage": "https://github.com/omc-community/omc-qoder-oauth",
