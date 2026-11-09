@@ -51,11 +51,11 @@ https://raw.githubusercontent.com/omc-community/omc-plugins/main/official.json
 
 | Plugin ID | Name | Description | Author | Repository |
 | --- | --- | --- | --- | --- |
-| `omc-workbuddy-oauth` | **OMC WorkBuddy OAuth** | Native WorkBuddy & WorkBuddy AI provider with dual-build OAuth, OpenAI-compatible execution, and quota normalization. | JUNZE | [omc-community/omc-workbuddy-oauth](https://github.com/omc-community/omc-workbuddy-oauth) |
-| `omc-zcode-oauth` | **OMC ZCode OAuth** | Native ZCode provider with dual-portal Z.ai / BigModel OAuth, model discovery, and quota normalization. | JUNZE | [omc-community/omc-zcode-oauth](https://github.com/omc-community/omc-zcode-oauth) |
-| `omc-qoder-oauth` | **OMC Qoder OAuth** | Native Qoder & Qoder CN provider with dual-portal OAuth, OpenAI-compatible execution, and quota normalization. | JUNZE | [omc-community/omc-qoder-oauth](https://github.com/omc-community/omc-qoder-oauth) |
-| `omc-trae-oauth` | **OMC Trae OAuth** | Native Trae & Trae CN provider with browser OAuth, model discovery, OpenAI-compatible execution with tool calls, and quota normalization. | JUNZE | [omc-community/omc-trae-oauth](https://github.com/omc-community/omc-trae-oauth) |
-| `omc-opencode-zen-free` | **OMC OpenCode Zen Free** | OpenCode Zen's free models with keyless public-credential sign-in, live free-model discovery, and tool-call preservation. | JUNZE | [omc-community/omc-opencode-zen-free](https://github.com/omc-community/omc-opencode-zen-free) |
+| `omc-workbuddy-oauth` | **OMC WorkBuddy OAuth** | Native WorkBuddy & WorkBuddy AI provider adapted for Oh-My-CPA and compatible with CLIProxyAPI, with dual-build OAuth, OpenAI-compatible execution, and quota normalization. | JUNZE | [omc-community/omc-workbuddy-oauth](https://github.com/omc-community/omc-workbuddy-oauth) |
+| `omc-zcode-oauth` | **OMC ZCode OAuth** | Native ZCode provider adapted for Oh-My-CPA and compatible with CLIProxyAPI, with dual-portal Z.ai / BigModel OAuth, model discovery, and quota normalization. | JUNZE | [omc-community/omc-zcode-oauth](https://github.com/omc-community/omc-zcode-oauth) |
+| `omc-qoder-oauth` | **OMC Qoder OAuth** | Native Qoder & Qoder CN provider adapted for Oh-My-CPA and compatible with CLIProxyAPI, with dual-portal OAuth, OpenAI-compatible execution, and quota normalization. | JUNZE | [omc-community/omc-qoder-oauth](https://github.com/omc-community/omc-qoder-oauth) |
+| `omc-trae-oauth` | **OMC Trae OAuth** | Native Trae & Trae CN provider adapted for Oh-My-CPA and compatible with CLIProxyAPI, with browser OAuth, model discovery, OpenAI-compatible execution with tool calls, and quota normalization. | JUNZE | [omc-community/omc-trae-oauth](https://github.com/omc-community/omc-trae-oauth) |
+| `omc-opencode-zen-free` | **OMC OpenCode Zen Free** | OpenCode Zen's free models adapted for Oh-My-CPA and compatible with CLIProxyAPI, with keyless public-credential sign-in, live free-model discovery, and tool-call preservation. | JUNZE | [omc-community/omc-opencode-zen-free](https://github.com/omc-community/omc-opencode-zen-free) |
 
 ### 2. Community Contributed Source (`community.json`)
 
