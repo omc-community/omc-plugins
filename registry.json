@@ -103,7 +103,7 @@
       "name": "OMC Trae OAuth",
       "description": "Native Trae provider adapted for Oh-My-CPA and compatible with CLIProxyAPI, with Trae and Trae CN browser OAuth, model discovery, OpenAI-compatible execution with tool calls, and normalized quota.",
       "author": "JUNZE",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "repository": "https://github.com/omc-community/omc-trae-oauth",
       "logo": "https://raw.githubusercontent.com/omc-community/omc-trae-oauth/main/assets/logo.png",
       "homepage": "https://github.com/omc-community/omc-trae-oauth",
