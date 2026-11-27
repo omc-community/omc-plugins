@@ -163,6 +163,38 @@
       }
     },
     {
+      "id": "omc-doubaowork-oauth",
+      "name": "OMC Doubao Work OAuth",
+      "description": "Native Doubao Work provider adapted for Oh-My-CPA and compatible with CLIProxyAPI, with QR code OAuth sign-in, live model discovery, OpenAI-compatible execution with tool calls, and normalized quota.",
+      "author": "JUNZE",
+      "version": "0.1.0",
+      "repository": "https://github.com/omc-community/omc-doubaowork-oauth",
+      "logo": "https://raw.githubusercontent.com/omc-community/omc-doubaowork-oauth/main/assets/logo.png",
+      "homepage": "https://github.com/omc-community/omc-doubaowork-oauth",
+      "license": "MIT",
+      "tags": [
+        "Provider",
+        "OAuth",
+        "Quota",
+        "Doubao",
+        "OMC"
+      ],
+      "locales": {
+        "ms": {
+          "description": "Penyedia Doubao Work asli yang disesuaikan untuk Oh-My-CPA dan serasi dengan CLIProxyAPI, dengan log masuk OAuth kod QR, penemuan model langsung, pelaksanaan serasi OpenAI dengan panggilan alat, serta kuota terselaras."
+        },
+        "zh-CN": {
+          "description": "专为 Oh-My-CPA 适配，兼容 CLIProxyAPI 的原生 Doubao Work（豆包工作）提供商插件，支持扫码登录、实时模型发现、OpenAI 兼容请求与工具调用，以及标准化配额展示。"
+        },
+        "zh-Hant": {
+          "description": "專為 Oh-My-CPA 適配，相容 CLIProxyAPI 的原生 Doubao Work（豆包工作）提供者外掛，支援掃碼登入、即時模型探索、OpenAI 相容請求與工具呼叫，以及標準化配額顯示。"
+        }
+      },
+      "install": {
+        "type": "github-release"
+      }
+    },
+    {
       "id": "omcpa-codex-candy-eval",
       "name": "降智测试",
       "description": "在 Oh My CPA 中通过糖果推理题、模型指纹和鹈鹕绘图测试检查模型表现，支持批量测试与历史记录。 / OMC-adapted evaluation plugin with candy reasoning, model fingerprint detection, pelican rendering, batch testing, and result history.",

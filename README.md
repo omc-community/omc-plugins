@@ -56,6 +56,7 @@ https://raw.githubusercontent.com/omc-community/omc-plugins/main/official.json
 | `omc-qoder-oauth` | **OMC Qoder OAuth** | Native Qoder & Qoder CN provider adapted for Oh-My-CPA and compatible with CLIProxyAPI, with dual-portal OAuth, OpenAI-compatible execution, and quota normalization. | JUNZE | [omc-community/omc-qoder-oauth](https://github.com/omc-community/omc-qoder-oauth) |
 | `omc-trae-oauth` | **OMC Trae OAuth** | Native Trae & Trae CN provider adapted for Oh-My-CPA and compatible with CLIProxyAPI, with browser OAuth, model discovery, OpenAI-compatible execution with tool calls, and quota normalization. | JUNZE | [omc-community/omc-trae-oauth](https://github.com/omc-community/omc-trae-oauth) |
 | `omc-opencode-zen-free` | **OMC OpenCode Zen Free** | OpenCode Zen's free models adapted for Oh-My-CPA and compatible with CLIProxyAPI, with keyless public-credential sign-in, live free-model discovery, and tool-call preservation. | JUNZE | [omc-community/omc-opencode-zen-free](https://github.com/omc-community/omc-opencode-zen-free) |
+| `omc-doubaowork-oauth` | **OMC Doubao Work OAuth** | Native Doubao Work provider adapted for Oh-My-CPA and compatible with CLIProxyAPI, with QR code OAuth sign-in, live model discovery, OpenAI-compatible execution with tool calls, and quota normalization. | JUNZE | [omc-community/omc-doubaowork-oauth](https://github.com/omc-community/omc-doubaowork-oauth) |
 
 ### 2. Community Contributed Source (`community.json`)
 

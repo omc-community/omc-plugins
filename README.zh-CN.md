@@ -55,6 +55,7 @@ https://raw.githubusercontent.com/omc-community/omc-plugins/main/official.json
 | `omc-qoder-oauth` | **OMC Qoder OAuth** | 专为 Oh-My-CPA 适配，兼容 CLIProxyAPI 的原生 Qoder 提供商插件，支持 Qoder 与 Qoder CN 双入口 OAuth 登录、OpenAI 兼容调用及配额展示。 | JUNZE | [omc-community/omc-qoder-oauth](https://github.com/omc-community/omc-qoder-oauth) |
 | `omc-trae-oauth` | **OMC Trae OAuth** | 专为 Oh-My-CPA 适配，兼容 CLIProxyAPI 的原生 Trae 提供商插件，支持 Trae 与 Trae CN 双入口浏览器 OAuth 登录、模型发现、OpenAI 兼容调用与工具调用及配额展示。 | JUNZE | [omc-community/omc-trae-oauth](https://github.com/omc-community/omc-trae-oauth) |
 | `omc-opencode-zen-free` | **OMC OpenCode Zen Free** | 专为 Oh-My-CPA 适配，兼容 CLIProxyAPI 的 OpenCode Zen 免费模型提供商插件，支持 OpenCode Zen 免费模型、public 凭证免密钥登录、实时模型发现与工具调用保留。 | JUNZE | [omc-community/omc-opencode-zen-free](https://github.com/omc-community/omc-opencode-zen-free) |
+| `omc-doubaowork-oauth` | **OMC Doubao Work OAuth** | 专为 Oh-My-CPA 适配，兼容 CLIProxyAPI 的原生 Doubao Work（豆包工作）提供商插件，支持扫码登录、实时模型发现、OpenAI 兼容请求与工具调用及配额展示。 | JUNZE | [omc-community/omc-doubaowork-oauth](https://github.com/omc-community/omc-doubaowork-oauth) |
 
 ### 2. 社区贡献源 (`community.json`)
 
