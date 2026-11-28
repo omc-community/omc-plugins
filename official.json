@@ -167,7 +167,7 @@
       "name": "OMC Doubao Work OAuth",
       "description": "Native Doubao Work provider adapted for Oh-My-CPA and compatible with CLIProxyAPI, with QR code OAuth sign-in, live model discovery, OpenAI-compatible execution with tool calls, and normalized quota.",
       "author": "JUNZE",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "repository": "https://github.com/omc-community/omc-doubaowork-oauth",
       "logo": "https://raw.githubusercontent.com/omc-community/omc-doubaowork-oauth/main/assets/logo.png",
       "homepage": "https://github.com/omc-community/omc-doubaowork-oauth",
